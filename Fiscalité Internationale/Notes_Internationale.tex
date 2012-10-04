@@ -1,0 +1,112 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{fncychap}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage[pdftitle={Master complémentaire en droit fiscal - Eléments de fiscalité locale et régionale},pdfauthor={Laurent RICHARD}, pdfsubject={Notes de cours}, pdfkeywords={ULg, Fisc}]{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{lscape}
+\allsectionsfont{\sffamily}
+\usepackage{fancybox}
+\setcounter{secnumdepth}{4}
+\usepackage{latexsym}
+\usepackage{pifont}
+\renewcommand\FrenchLabelItem{\textbullet}
+\widowpenalty=9999
+\clubpenalty=9999
+
+
+
+
+\begin{document}
+\sffamily
+\newcommand{\RPoint}{\protect\includegraphics[height=1.7ex,keepaspectratio]{point.png}}
+\newcommand{\RSave}{\protect\includegraphics[height=1.7ex,keepaspectratio]{Save.png}}
+\renewcommand\labelitemii{\ding{220}}
+\begin{titlepage}
+
+\begin{center}
+\begin{Large}ULg - Master complémentaire en droit fiscal\end{Large}\\
+\vspace{0.5cm}- \\
+\vspace{0.5cm}
+Fiscalité des entreprises
+
+\end{center}
+\vspace{6cm}
+
+\LARGE
+\begin{center}
+\textsc{Notes de cours - Eléments de fiscalité internationale}\\
+\end{center}
+
+\vspace{10.0cm}
+
+\normalsize
+\flushright{
+\textbf{Laurent RICHARD}\\
+Comptable-fiscaliste agréé IPCF\\
+\vspace{0.5cm}
+Année académique 2012-2013}
+
+\end{titlepage}
+
+\newpage
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\null
+
+\newpage
+\thispagestyle{empty}
+\setcounter{page}{0}
+\vspace{20cm}
+
+\vfill
+\begin{flushright}
+Life is a succession of lessons, \\
+which must be lived to be understood. \\ 
+--- \textit{Ralph Waldo Emerson}
+\end{flushright}
+\vfill
+\newpage
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{ \fancyhead{}
+\renewcommand{\headrulewidth}{0pt}}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\null
+\newpage
+\pagenumbering{roman} \setcounter{page}{1} 
+
+
+
+
+\tableofcontents
+
+
+
+\chapter{Cours du 04.10.2012}
+\pagenumbering{arabic} \setcounter{page}{1} 
+
+\section{Introduction}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications2}       % 'publications' is the name of a BibTeX file
+\addcontentsline{toc}{chapter}{Bibliographie} 
+\end{document}
