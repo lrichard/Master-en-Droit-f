@@ -1,0 +1,160 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{fncychap}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage[pdftitle={Master complémentaire en droit fiscal - Eléments de fiscalité européenne},pdfauthor={Laurent RICHARD}, pdfsubject={Notes de cours}, pdfkeywords={ULg, Fisc}]{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{lscape}
+\allsectionsfont{\sffamily}
+\usepackage{fancybox}
+\setcounter{secnumdepth}{4}
+\usepackage{latexsym}
+\usepackage{pifont}
+\renewcommand\FrenchLabelItem{\textbullet}
+\widowpenalty=9999
+\clubpenalty=9999
+
+
+
+
+\begin{document}
+\sffamily
+\newcommand{\RPoint}{\protect\includegraphics[height=1.7ex,keepaspectratio]{point.png}}
+\newcommand{\RSave}{\protect\includegraphics[height=1.7ex,keepaspectratio]{Save.png}}
+\renewcommand\labelitemii{\ding{220}}
+\begin{titlepage}
+
+\begin{center}
+\begin{Large}ULg - Master complémentaire en droit fiscal\end{Large}\\
+\vspace{0.5cm}- \\
+\vspace{0.5cm}
+Fiscalité des entreprises
+
+\end{center}
+\vspace{6cm}
+
+\LARGE
+\begin{center}
+\textsc{Notes de cours - Eléments de fiscalité européenne}\\
+\end{center}
+
+\vspace{10.0cm}
+
+\normalsize
+\flushright{
+\textbf{Laurent RICHARD}\\
+Comptable-fiscaliste agréé IPCF\\
+\vspace{0.5cm}
+Année académique 2012-2013}
+
+\end{titlepage}
+
+\newpage
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\null
+
+\newpage
+\thispagestyle{empty}
+\setcounter{page}{0}
+\vspace{20cm}
+
+\vfill
+\begin{flushright}
+Life is a succession of lessons, \\
+which must be lived to be understood. \\ 
+--- \textit{Ralph Waldo Emerson}
+\end{flushright}
+\vfill
+\newpage
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{ \fancyhead{}
+\renewcommand{\headrulewidth}{0pt}}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\null
+\newpage
+\pagenumbering{roman} \setcounter{page}{1} 
+
+
+
+
+\tableofcontents
+
+
+
+\chapter{Cours du 16.10.2012}
+\pagenumbering{arabic} \setcounter{page}{1} 
+
+\section{Introduction}
+
+Les questions de fiscalité internationale sont la plupart des problèmes dans les cabinets. Matière essentielle. L'européenne tout autant -> permet de résoudre des problèmes et est très valorisable dans le milieu professionnel.\\
+
+Le droit fisc europeen prend de l'ampleur. Rare est le cas totalement génaral. (Règle -> Hypothèse -> Conclusions). Généralement, on fait complexe pour optimiser. Problème d'interprétation. ("Normalement ... il y a un risque si interprétation contraire") On propose les différentes lectires et celle la plus probable. Tentative de regarder la jurisprudence. Si la règle ne pas être lue selon notre souhait -> Vérifier qu'on ne peut pas faire tomber la règle. (Cfr hiérarchie des normes). Beaucoup de textes ont des influences EU. (C'est un système normatif de référence).\\
+
+Arrêt Dijkman - Résident belge. Investissements aux P-B. Coupons payés aux P-B et déclarés en Belgique. Taux dinctint et additionnels communaux. Si revenus perçus en B, pas d'additionnels communaux car précompte libératoire. -> Question préjudicielle CJUE\\
+
+Ordonnance De Baeck (Ancien 90 9\degre CIR): Liberté d'établissement et liberté de circulation des capitaux. Sanction de transférer à l'étranger par rapport au national. En cas de discrimination à rebourg (étranger favorisé par rapport au national), pas de possibilité de recours européen (voir discrinimation via les tribunaux internes)\\
+
+Arrêt Eckelkamp : Droit de sucession : Actif net (actif - Passif). Mutation par décès : base brute -> Compétence des régions. Etat fédéral condamné pour une compétence régionale. Modification différente dans les 3 régions. (article différent). \\
+
+Intérêts notionnels : Conclusions de l'Avocat général M. Paolo Mengozzi. Avant Centre de coordination, maintenant question Intérêts notionelles. Ré-équilibrer les intérêts sur emprunt tiers et emprunt sur fonds propres. Quid Convention préventive de double imposition. Différentes possibilité d'investir (Etablissement stable, société distincte ou pas de représentation sur place). Si établissement stable, Taxation dans l'Etat d'établissement étranger et détaxé dans le pays résident. Si intérêts notionnels, intérêts sur base des capitaux qui vont engendrer des revenus "taxables" (et non revenus exonéré). Idem pour établissement stable en Belgique (intérêts notionnel sur la partie belge) même si société résidente ailleurs. -> Problème avec la liberté d'établissement ? (Généralement la Cour suit son avocat général).\\
+
+Autres exemplrs de contraintes communautairs pesant sur les législateirs nationaux :
+
+\begin{itemize}
+\item Taux de TVA applicables en matière d'Horeca
+\item introduction d'une vignette autoroutière en Belgique
+\item Régime fiscal des RDT / régime fiscal des fusions
+\item Introduction de zones frances en Belgique
+\item Régionalisation de l'IPP ou de l'ISOC en Belgique
+\item ...
+\end{itemize}
+
+Quid de la conformité de la régionalisation de l'IPP par rapport au droit européen. La question se pose déjà avec le job-korting en Flandres. Intéressant de majorer le net poche des travailleurs plutot que majorer les allocations sociales. Supprimer actuellement. Français allant travailler en Flandres, pas de réduction pour lui. (Taxation pourtant des revenus en Belgique mais à l'INR-PP) La Flandres ne peut pas donner la réduction car pas responsable de l'INR-PP. La Cour s'en fiche des subdivisions belges. Application au Lillois via circulaire. Quid  d'un Wallon ? Situation purement interne ! Pas question européenne. Mais affaire de la Zorg-verzekering, assurance complémentaire complémentaire. (Option sur Bruxelles). Quid de l'ouverture aux Wallons si le lillois y a accès ? La Cour de Justice n'a pas dit que c'était un problème interne. Il faut distinguer les blanc-bleu wallon des européens travaillant en Flandres (Libre circulation des personnes vu qu'il n'a pas le meme avantage qu'un flamand).\\
+
+
+Objectif de création d'un marché intérieur : condition d'échange comme un marché national. Déplacelent des personnes, des facteurs de production, des capitaux. Espace équivalent. \\
+
+Interdiction des droits de douanes, quotas et effets équivalents.\\
+
+Quid système d'ISOC Irlande (12\% et non taxation si les bénéfices ne sortent pas.) -> Disparité et la Cour est incompétente.\\
+
+Travailleurs frontalier : taxation dans l'etat de résidence et point de vue secu dans l'etat qui alloue les revenus -> Optimisation et disparité.\\
+
+On ne peut soutenir une harmonisation si on n'adopte pas des concepts qui sont compris de la meme manière. (Cfr location immobilière en TVA) -> Role très important de la CJUE\\
+
+Important qu'on puisse invoquer le droit européen et ont un effet direct. Possibilité devant un juge et d'invoquer la violation de la disposition de droit européen.\\
+
+Effet direct vertical : effet contre une instance supérieure\\
+
+Effet direct horizontal : effet dans les affaires entre personnes étant sur meme pied d'égalité\\
+
+Si mauvaise transposition en droit nation, un particulier peut invoquer la directive pour se voir appliquer la directive. Mais l'Etat ne peut le faire vis-à-vis un particulier.\\
+
+Obligation d'équivalence (délai de recours identique que le droit national) et d'effectivité.
+  
+
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications2}       % 'publications' is the name of a BibTeX file
+\addcontentsline{toc}{chapter}{Bibliographie} 
+\end{document}
