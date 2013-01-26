@@ -1,0 +1,659 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage{fncychap}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage[pdftitle={Master complémentaire en droit fiscal - Éléments de procédure fiscale},pdfauthor={Laurent RICHARD}, pdfsubject={Notes de cours}, pdfkeywords={ULg, Fisc}]{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{lscape}
+\allsectionsfont{\sffamily}
+\usepackage{fancybox}
+\setcounter{secnumdepth}{4}
+\usepackage{latexsym}
+\usepackage{pifont}
+\renewcommand\FrenchLabelItem{\textbullet}
+\widowpenalty=9999
+\clubpenalty=9999
+
+
+
+
+\begin{document}
+\sffamily
+\newcommand{\RPoint}{\protect\includegraphics[height=1.7ex,keepaspectratio]{point.png}}
+\newcommand{\RSave}{\protect\includegraphics[height=1.7ex,keepaspectratio]{Save.png}}
+\renewcommand\labelitemii{\ding{220}}
+\begin{titlepage}
+
+\begin{center}
+\begin{Large}ULg - Master complémentaire en droit fiscal\end{Large}\\
+\vspace{0.5cm}- \\
+\vspace{0.5cm}
+Fiscalité des entreprises
+
+\end{center}
+\vspace{6cm}
+
+\LARGE
+\begin{center}
+\textsc{Notes de cours - Éléments de procédure fiscale}\\
+\end{center}
+
+\vspace{10.0cm}
+
+\normalsize
+\flushright{
+\textbf{Laurent RICHARD}\\
+Comptable-fiscaliste agréé IPCF\\
+\vspace{0.5cm}
+Année académique 2012-2013}
+
+\end{titlepage}
+
+\newpage
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\null
+
+\newpage
+\thispagestyle{empty}
+\setcounter{page}{0}
+\vspace{20cm}
+
+\vfill
+\begin{flushright}
+Life is a succession of lessons, \\
+which must be lived to be understood. \\ 
+--- \textit{Ralph Waldo Emerson}
+\end{flushright}
+\vfill
+\newpage
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{ \fancyhead{}
+\renewcommand{\headrulewidth}{0pt}}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\null
+\newpage
+\pagenumbering{roman} \setcounter{page}{1} 
+
+
+
+
+\tableofcontents
+
+\chapter*{Introduction}
+
+Examen : écrit – 4 questions « casus ». 
+Rem : on peut prendre les codes mais pas les notes des cours. 
+Ce cours figure dans le tronc commun des cours obligatoires depuis 3-4 ans en raison d’un manque de maîtrise de notions importantes au niveau de la procédure. \\
+
+Exemples : 
+\begin{itemize}
+\item Présomptions comme moyen de preuve pour l’administration 
+\item Simulation (>< choix de la voie la moins imposée) ; un jugement d’un TPI dit que la simulation n’implique pas d’intention frauduleuse ; un autre jugement dit que la simulation est un moyen de preuve … C’est faux ! 
+\end{itemize}
+
+On aura l’occasion d’aborder les caractéristiques du droit fiscal comme le principe de légalité « \textit{Pas d’impôt sans loi, pas de modération d’impôt sans loi} » (articles 170 et 172 C°) => cela induit qu’il s’agit d’une matière d’ordre public.  \\
+
+Le professeur Edouard BOURS, en 1957, appelait de ses vœux une simplification des règles de procédure  fiscale ; aujourd’hui, on constate exactement l’inverse et c’est d’ailleurs une évolution générale du droit fiscal. Il n’y a plus d’avenir pour les fiscalistes généralistes.\\
+
+Cette complexification de la législation fiscale résulte de plusieurs phénomènes : 
+\begin{itemize}
+\item Internationalisation du droit ; 
+\item Multiplication des niveaux de formulation des normes en créant des subdivisions (notamment les régions) ;
+\item Le législateur ne prend pas suffisamment le temps et la peine de réfléchir aux conséquences des normes adoptées. Si on compare les TP d’une loi d’il y a 30 ans et d’une loi aujourd’hui, avant on était plus soucieux de l’impact des normes pour ses destinataires et ainsi, en droit fiscal, pour les contribuables et l’administration. 
+\end{itemize}
+
+Le but du cours c’est d’avoir à l’esprit des notions permettant d’avoir des réflexes, des automatismes. \\
+
+\section*{Quelles sont les nouveautés en matière de procédure ?}
+
+1. Une loi du 19 mai 2010 introduit une nouveauté en matière de computation des délais en matière fiscale. Un arrêt de la cour constitutionnelle statuant sur la constitutionnalité du délai de réclamation a considéré que l’article 371 CIR n’était pas constitutionnel en ce que l’on retenait la date de l’envoi (théorie de l’envoi). Aujourd’hui, on retient la théorie de la réception et dans tous les délais fiscaux, aujourd’hui, la computation des délais implique que le délai ne commence à courir qu’à partir du 3ème jour ouvrable qui suit l’envoi. \\
+
+Ex : avis de rectification (notification)
+\begin{itemize}
+\item AVANT : 14 juillet (le délai expirait le 14 aout)
+\item AUJOURD’HUI : on compte le troisième jour ouvrable qui suit la date d’envoi de la notification et on exclut le samedi, le dimanche et les jours fériés (jours non ouvrables). 
+\end{itemize}
+
+2. Nouvelles règles en matière de déclaration. But : encourager le recours au système informatique (tax-on-web). \\
+
+3. Modification de l’article 319 CIR régissant le droit pour l’administration d’avoir accès aux locaux professionnels. Il y avait une divergence avec le texte en matière de TVA (or contrôle par des administrations polyvalentes). \\
+
+\begin{itemize}
+\item en matière d’IR, le fisc ne pouvait pas, sans accord du contribuable, avoir accès aux livres comptables 
+\item en matière de TVA, à l’occasion de la visite des locaux professionnels, on peut avoir accès aux documents 
+\end{itemize}
+=> On a aligné le régime IR sur le régime TVA\\
+
+4. secret bancaire. Il figurait à l’article 318 CIR. En juillet 2010, on a modifié le CIR et désormais l’administration pourra s’adresser aux banques, dans trois cas : 
+
+\begin{itemize}
+\item administration disposant d’indices de fraude fiscale
+\item administration fiscale belge requise par une administration fiscale étrangère de lui fournir des renseignements impliquant la levée du secret
+\item utilisation du moyen de preuve prévu à l’article 341 CIR (taxation par signes et indices)
+\end{itemize}
+=> le secret bancaire n’existe plus que de manière très symbolique. 
+
+Le cours sera axé essentiellement sur la procédure en matière d’impôt sur les revenus. De temps à autre, on ferait référence à la procédure en matière de fiscalité indirecte,... \\
+
+En matière d’IR, il existe trois types de délais : 
+\begin{description}
+\item[délais d’investigation] Délais endéans lesquels l’administration doit procéder à des investigations ; article 333 CIR
+\item[délais d’imposition] Délais endéans lesquels l’impôt doit être enrôlé. 
+\item[délais de recouvrement] Délais endéans lesquels l’impôt doit être recouvré. 
+\end{description}}
+
+En matière d’impôts indirects, il n’y a que des délais de recouvrement. \\
+
+En matière d’impôts indirects, le fait générateur fait naitre la dette d’impôt. Ex : en matière de TVA, accomplissement d’une opération taxée. \\
+
+En matière d’impôts directs, on impose les revenus d’une année civile, le revenu global net d’une période imposable et donc il n’est pas possible de déterminer, dès la perception d’un revenu, l’impôt que le contribuable devra acquitter. Au plus tôt le 31 décembre de la période imposable, on pourra globaliser et déterminer le revenu global net soumis à l’IR. \\
+
+\subsection*{Vision panoramique de la procédure en matière d’impôt sur les revenus}\\
+On va raisonner phase par phase. On a la déclaration. Qui dit procédure dit contentieux …
+
+\subsection*{Phase précontentieuse}\\
+Elle débute par l’envoi d’un avis de rectification. Cela fait qu’on entame les pourparlers entre le contribuable et l’administration. Dans le pire des cas, cela se termine par le rôle, l’enrôlement, càd le titre exécutoire que le fisc peut s’attribuer à lui-même en vertu du privilège du préalable (= faculté de se décerner à soi un titre exécutoire alors qu’en matière judiciaire, un justiciable doit l’obtenir auprès des tribunaux). 
+En matière d’impôts indirects, ce titre s’appelle la contrainte et non le rôle.  
+
+\subsection*{Contentieux administratif}\\
+Il est introduit par une réclamation envoyée au directeur régional territorialement compétent.
+La réclamation est instruite. 
+Cela se termine par la décision administrative du directeur régional. 
+
+\subsection*{Contentieux judiciaire}
+
+Ensuite, le contribuable a le loisir de saisir le TPI de la contestation sous la forme du dépôt d’une requête contradictoire en matière fiscale. Il y a deux degrés d’instance (instance et appel) et comme recours extraordinaire, un pourvoi à la cour de cassation.
+ 
+Dans ce cours, on envisagera principalement la déclaration, la phase précontentieuse (y compris les pouvoirs d’investigation du fisc) et, après enrôlement de l’impôt, on s’arrête au contentieux administratif. 
+En matière de fiscalité indirecte, on a seulement des délais de recouvrement, le titre exécutoire est une contrainte et, au niveau de la procédure, c’est très simplifié parce qu’il n’y a pas de formalité substantielle à suivre avant de décerner une contrainte. L’administration, par principe, en vertu de la loi sur la motivation formelle de 1991, doit motiver son intention de réclamer des impôts au contribuable mais cela se fait de façon informelle sous la forme d’un relevé de régularisation et, ensuite, sous la forme d’un PV qui doit être annexé à la contrainte. Il n’y a pas de contentieux administratif, mis à part le contentieux administratif informel (non réglementé par le droit fiscal). Directement, on peut avoir un recours devant le TPI. 
+
+
+\subsection*{Principes d'interprétation}
+\begin{itemize}
+\item Un texte clair ne interprète pas. S'il n'est pas défini, il faut donner à un mot son sens usuel.
+\item Ce n'est que si un texte n'est pas clair que l'on peut l'interpréter (notamment via les travaux préparatoire) afin de voir la volonté du législateur.
+\item Sont prohibé les méthode d'interprétation analogique et téléologique (selon le but du législateur).
+\end{itemize}
+
+exemple : Cassation 11.03.2011 - Taxation ATN dans le chez de l'épouse du dirigeant.
+
+\section*{Principe de légalité de l'impôt}
+\subsection*{Introduction}
+
+Le principe de la légalité de l’impôt est exprimé à l’article 170 de la Constitution qui dispose que « aucun impôt au profit de l’Etat ne peut être établi que par une loi ». Cette règle qui remonte à notre vieille constitution de 1830 a pour objectif de protéger les citoyens contre l’arbitraire ou l’appétit de l’Etat dans un domaine aussi sensible que celui de la ﬁscalité. Sa formulation est d’ailleurs plus stricte qu’aux Pays-Bas (la crainte d’un retour à la domination d’un pouvoir étranger étant sans doute toujours vivace pour le Constituant de 1830). L’article 170 vise à garantir à chaque citoyen qu’il ne sera soumis à l’impôt que s’il y a consenti démocratiquement. Cette disposition constitue une transposition partielle d’un très vieil adage : « No taxation without representation » qui remonte à 1215. Le principe de légalité de l’impôt, qui n’est au fond que l’une des illustrations du principe plus général de la séparation des pouvoirs, a aussi des effets sur l’interprétation des lois ﬁscales belges. Puisque seules les autorités législatives ont le pouvoir d’établir l’impôt, le juge et a fortiori l’administration doivent s’en tenir à une interprétation stricte du texte, ce qui empêche tout procédé d’interprétation visant à combler les lacunes d’un texte de loi ou à raisonner par analogie. Le refus de l’interprétation par analogie n’oblige toutefois pas le juge à se limiter à la seule interprétation littérale d’un texte de loi ﬁscal. Le juge est loin d’être seulement « la bouche qui prononce la parole de la loi », comme l’écrivait (et l’espérait) Napoléon qui faisait et défaisait les lois. La recherche de l’intention du législateur n’est pas interdite. Le juge peut ainsi avoir recours à diverses méthodes pour comprendre la portée d’un texte : il s’agit, notamment, de la méthode dite grammaticale (ou sémiotique), la méthode historique
+
+(p.ex. le recours aux travaux préparatoires de la loi) ou la méthode du recours au contexte (appelée aussi méthode systémique). Dans sa démarche, le juge ne perdra pas de vue cet autre adage résultant aussi du principe de légalité : dans le doute, la loi doit être interprétée contre le ﬁsc (« In dubio contra fiscum »). Tous ces principes sont admirablement résumés par cette courte formule du professeur Bernard Castagnède1 : « Si le juge dit plus librement le droit fiscal, c’est encore le législateur qui par principe le fait. ».
+
+\subsection*{Portée (politique et juridique) du principe de légalité de l’impôt}
+
+Le principe de légalité de l’impôt veut que seule la loi soit à l’origine de l’impôt. Le texte de notre Constitution (article 170) précise que l’impôt ne peut être établi que par la loi. L’expression « par la loi » est à ne pas confondre avec l’expression « en vertu de la loi ». Lorsque l’impôt peut être établi « en vertu d’une loi », il reste toujours possible de donner délégation au pouvoir exécutif de lever l’impôt.
+
+En Belgique, la délégation en matière ﬁscale est en principe inconstitutionnelle2, donc interdite. Cette interdiction vise à garantir au citoyen que l’impôt qu’il doit payer a été mis en place exclusivement par une institution qu’il a élue. Le citoyen est donc en droit de savoir à l’avance la hauteur des prélèvements qu’il va devoir subir. Un tel principe présente donc un volet historique (il est la conséquence de nombreuses luttes démocratiques qui se sont déroulées au ﬁl des siècles – révolutions française et américaine, p.ex. – qui ont permis ce consentement du peuple à l’impôt) mais aussi un volet juridique (selon lequel la sécurité juridique requiert que seule la loi puisse déterminer les conditions strictes dans lesquelles le citoyen doit participer aux charges publiques).
+
+Le principe de légalité est aussi susceptible d’avoir une inﬂuence sur les méthodes d’interprétation des lois ﬁs
+cales.
+
+\subsection*{Règles d’interprétation en droit ﬁscal}
+
+On ne cesse de marteler partout que les lois ﬁscales doivent s’interpréter strictement. Comme l’écrivait un auteur français, « la loi est ce que le législateur a dit et non ce qu’il a voulu dire » . Mais comment doit-on comprendre ce principe de l’interprétation stricte des lois ﬁscales ? Signiﬁe-t-il que le juge, soucieux de respecter le principe de légalité de l’impôt, doive se borner à n’appliquer loi ﬁscale que de manière mécanique et dans un esprit de soumission à l’égard d’un législateur ﬁscal tout puissant ?
+
+Le juge dispose-t-il d’un certain pouvoir créatif et peut-il de dégager « l’esprit de la loi ﬁscale », et ce, a fortiori, lorsque le texte ﬁscal ne se singularise pas par une grande clarté ? En réalité, il nous paraît que, sans pour autant ajouter au texte de loi, le juge ﬁscal puisse recourir à différentes méthodes d’interprétation tout à fait valables pour l’aider dans sa difﬁcile mission : il s’agira des méthodes de l’interprétation grammaticale, de l’interprétation systémique, et de l’interprétation téléologique. En ce sens, l’expression « interprétation stricte des lois ﬁscales » ne se confond pas avec l’expression « interprétation restrictive », qui est quelquefois utilisée à tort.
+
+L’interprétation grammaticale est celle qui s’obtient à l’aide des usages de la langue française et de la syntaxe.
+
+Ainsi par exemple, le terme « enfant » que l’on retrouve dans certaines dispositions ﬁscales ne vise pas que les enfants légitimes, mais aussi les enfants naturels reconnus ou les enfants adoptifs.
+
+L’analyse ou interprétation systémique consiste, quant à elle, à éclairer le sens d’un texte de loi ﬁscale à l’aide du recours au contexte, voire en se basant sur d’autres sources juridiques (par exemple la jurisprudence ou d’autres lois) qui pourraient contenir les mêmes termes utilisés.
+
+Comme l’écrit Thierry Afschrift, « lorsque le texte légal n’est pas clair, le juge peut apprécier sa portée, en s’inspirant de la logique et de la nécessité de cohérence du texte ; il peut donc s’inspirer de solutions adoptées dans des matières voisines ».
+
+L’interprétation téléologique est celle qui vise à retrouver les objectifs du législateur, à connaitre la ﬁnalité de la loi à l’aide de l’examen des commentaires donnés dans les documents parlementaires ou dans les débats parlementaires. L’idée est ici de retrouver la volonté du législateur à l’aide des écrits qui ont concouru à sa rédaction. Si le texte de loi est déterminant, rien n’interdit au juge de vériﬁer si ce texte n’est pas contraire aux objectifs qui ont été voulus par le législateur. La recherche des objectifs permet d’éviter toute application littérale de la loi qui serait parfaitement inappropriée. Comme l’écrivait avec pertinence De Page, « C’est la loi qui lie le juge, son texte n’enchaîne que l’ouvrier imprimeur, et le premier ne doit pas être confondu avec le second ». Ce que veut dire l’auteur est qu’il peut arriver qu’un texte peut sembler clair de prime abord, alors qu’il doit recevoir une autre signiﬁcation que celle qu’il devrait avoir en fonction des intentions du législateur. Dans ce cas, c’est l’intention du législateur qui doit primer6.
+
+\subsection*{Le refus de l’interprétation par analogie}
+
+S’il est admis de se servir des méthodes exposées ci-avant qui visent à se baser sur des éléments extrinsèques à loi ﬁscale pour retrouver la volonté du législateur, il est en revanche interdit d’interpréter la loi de manière extensive, en « transposant une solution juridique à une hypothèse semblable non résolue par la loi »7 . En d’autres termes, le juge et l’administration ne peuvent combler les lacunes en droit ﬁscal. Si une loi ﬁscale ne régit pas une situation donnée, il faut en conclure simplement qu’aucun impôt n’est applicable à cette situation. Car l’analogie crée une règle nouvelle et distincte, ce qui est totalement au contraire au principe de légalité de l’impôt. Raisonner par analogie consiste, tant pour la juge que pour le fonctionnaire, à faire œuvre législative. Car l’analogie vise, non à rechercher la volonté réelle du législateur, mais à établir une similitude entre un cas prévu par le législateur et un cas non prévu.
+
+On observera que certains auteurs ne partagent pas ce point de vue et plaident pour un droit au comblement des lacunes ﬁscales . Leur raisonnement qui – reconnaissons-le – n’est pas entièrement dénué de pertinence, se résume comme suit. Au moment où le législateur a conçu et rédigé un texte de loi, il ne pouvait appréhender tous les cas ou toutes les opérations qui se produiraient à l’avenir.
+
+Dès lors, il faudrait prolonger l’œuvre du législateur en adaptant la loi à ces situations nouvelles. Le célèbre Portalis, fondateur du Code civil, n’écrivait-il pas « les lois, une fois rédigées, demeurent telles qu’elles ont été écrites ; les hommes au contraire, ne se reposent jamais ; ils agissent toujours ; et ce mouvement qui ne se s’arrête pas produit à chaque instant quelque combinaison nouvelle ». Selon cette doctrine, des situations nouvelles, imprévisibles au moment de la rédaction de loi ﬁscale, doivent être régies par celle-ci grâce au travail constant de comblement des lacunes de la loi. Il nous paraît que cette position ne peut être suivie, car elle consisterait à valider la thèse fort critiquable que l’interprète puisse se muer en législateur.
+
+En revanche, nous souscrivons à l’analyse du procureur Krings qui opère une distinction entre les « lacunes externes » (c’est-à-dire celles qui se situent en dehors du système légal) et les lacunes internes (qui se situent au sein du système légal) . Les lacunes externes ne peuvent être comblées sauf à violer la Constitution. Mais les lacunes internes peuvent être comblées. Une lacune interne viserait par exemple le cas où le législateur utilise une notion qu’il ne déﬁnit toutefois pas. L’interprète pourrait rechercher alors, y compris par un raisonnement analogique, le sens qu’il faudrait donner à cette notion.
+
+\subsection*{La question de l’interprétation économique de la loi ﬁscale}
+
+Un autre courant doctrinal et administratif – plus inquiétant – et qui sans doute s’inspire de traditions anglo-saxonne et germanique bien ancrées, est en train de voir le jour en Belgique. Selon cette approche, l’interprétation économique d’une loi ﬁscale ou d’une opération produisant des effets ﬁscaux est une interprétation parfaitement valable. Cette thèse ne vise rien moins qu’à faire triompher la réalité économique sur la réalité juridique.
+
+Elle trouve son fondement dans le principe d’égalité devant l’impôt. L’idée est ici que, pour éviter des distorsions trop grandes dans la contribution des contribuables à l’impôt, il faut faire supporter la même charge ﬁscale à des phénomènes économiques identiques ou similaires.
+
+Deux exemples pourraient illustrer cette tendance. Ainsi, en est-il d’une opération de rachat d’actions propres.
+L’administration ou le juge qui en viendrait à considérer que la ﬁnalité économique d’une telle opération estde permettre, à un coût ﬁscal avantageux, d’octroyer aux actionnaires des dividendes, n’hésitera pas à requaliﬁerle rachat d’actions en une distribution de dividendes et étendre l’application de loi ﬁscale, qui n’est normalement censé s’appliquer qu’aux dividendes, aux bonis d’acquisitions. On constate aussi le recours à cette méthode dans le cas d’apport d’universalité de biens, immédiatement suivi par une vente des actions de la société bénéﬁciaire de cet apport. Au nom d’une nécessaire référence à la réalité économique, l’administration cherchera à considérer que ces deux opérations successives ne constituent qu’une seule opération économique, à savoir la vente (taxable) des actifs d’une société. En droit ﬁscal belge ni d’ailleurs en droit ﬁscal français11 l’interprétation économique des lois ﬁscales n’est pas encore parvenue à percer. Mais la porte est désormais ouverte. On se rappellera pourtant de ces mots célèbres du professeur Gothot : « Qu’on nous fasse grâce de cette formule selon laquelle l’impôt atteint les réalités. Bien sûr. Mais quelles réalités ? Pour l’instant, toujours des réalités juridiques »12. La brèche de l’appréciation économique étant ouverte, il faut craindre qu’elle ne conduise en réalité à une profonde insécurité juridique. L’erreur d’une telle méthode est qu’elle ne tient compte que du contenu économique d’un acte en faisant abstraction complète des chemins juridiques empruntés.
+
+Or, si un décalage important devait exister entre une forme juridique usitée par des contribuables et la ﬁnalité économique de l’opération réalisée au moyen de cette forme juridique, il appartient au législateur, et à lui seul, d’apporter les correctifs nécessaires. L’intervention législative reste, à notre avis, la seule solution susceptible de concilier le principe essentiel d’égalité devant l’impôt et le principe de légalité de l’impôt qui assure l’indispensable sécurité juridique.
+
+\subsection*{Exemples d’interprétation stricte des lois ﬁscales dans la jurisprudence}
+
+Pour clore notre exposé, il nous parait utile d’évoquer deux cas de jurisprudence qui illustrent très bien l’importance de l’interprétation stricte de la loi ﬁscale et qui nous rappellent que le principe de la légalité de l’impôt, consacré il y a près de deux siècles, est toujours d’une actualité brûlante. Le premier exemple concerne un problème de remploi tardif : si l’indemnité ou la valeur de réalisation est remployée tardivement, la plus-value exonérée jusque là « est considérée comme un revenu de la période imposable pendant laquelle le délai de remploi est venu à expiration » (art. 47, § 6 CIR). Le ﬁsc peut-il toutefois, lors d’un contrôle ﬁscal, taxer la plus-value à charge d’une période imposable ultérieure, par exemple sur la base de l’article 361 du CIR qui permet de taxer les surestimations d’élément du passif. Selon l’article 361 du CIR, lorsque l’examen de la comptabilité d’une période imposable déterminée fait apparaître des sous-estimations d’éléments de l’actif ou des surestimations d’éléments du passif, l’administration peut considérer celles-ci « comme des bénéfices de cette période imposable, même si elles résultent d’écritures comptables se rapportant à des périodes imposables ». Dans son jugement du 14 décembre 2010, le tribunal rappelle que la législation ﬁscale est d’ordre public et d’interprétation stricte. Il en déduit qu’une interprétation littérale de l’article 47, § 6 du CIR est indiquée car cet article est sufﬁsamment précis et constitue, dès lors, un régime spéciﬁque qui prime sur l’article 361 du CIR. L’administration ﬁscale ne peut, en utilisant l’article 361 du CIR, considérer la plus-value (ou la partie contestée de celle-ci) comme un revenu d’une autre période imposable que la période pendant laquelle le délai de remploi est venu à expiration. Il était donc trop tard pour procéder à la taxation. En matière de levée d’option sur un leasing de voiture de société, on évoquera aussi cet arrêt du 17 mars 2011 de la Cour de Cassation. Celle-ci a jugé, selon une stricte interprétation de la loi ﬁscale, qu’il n’y a plus d’avantage de toute nature imposable lorsque c’est le conjoint du dirigeant de la société qui lève l’option d’achat. Pour la Cour, c’est en effet le conjoint (qui n’était ni gérant ni administrateur) qui bénéﬁcie de l’avantage en question. La question de l’interprétation des lois est donc tout sauf un débat purement théorique.\\
+
+Les impôts sont d'ordre public -> On ne transige pas sur le droit mais bien sur le fait. Un contribuable peut toujours réclamer sur une imposition dont il fait l'objet.
+
+
+
+\chapter{}
+
+\section{La déclaration fiscale} 
+C’est un acte solennel, imposé annuellement dans le cas des impôts sur les revenus constituant un mode d’établissement de l’impôt.\\
+
+C’est un acte solennel et ce qu’il est indiqué est opposable au contribuable. 
+
+C’est un acte obligatoire en principe et toute défaillance entraîne des conséquences négatives : des sanctions directes et indirectes sont prévues. 
+
+C’est un acte annuel : le principe de l’annualité de l’impôt  fait référence au fait qu’on soit imposé sur le revenu annuel global net. Pour les personnes physiques, la période imposable correspond à une année civile. 
+Quelles sont les personnes globalement assujetties à la déclaration ? 2 catégories. 
+
+\subsection{Les bénéficiaires de revenus} 
+
+Personnes physiques
+
+\begin{itemize}
+\item Résidents belges 
+\begin{itemize}
+\item (personne physique disposant, en Belgique, de son foyer permanent d’habitation ; notion fiscale de pur fait (>< notion d’inscription au registre de la population))
+\item En Belgique, on peut abandonner le critère du siège de la fortune parce que les CPDI conclues retiennent le foyer permanent d’habitation comme critère principal à l’exclusion du siège de la fortune 
+\end{itemize}
+\item Non résidents 
+\begin{itemize}
+\item Foyer permanent d’habitation à l’étranger 
+\item Perception en Belgique de revenus globalisables 
+\end{itemize}
+\end{itemize}
+\null
+Personnes morales 
+
+\begin{itemize}
+\item Société résidente : à tout le moins, siège de direction effectif (>< siège social) en Belgique 
+\item Société non résidente percevant des revenus de source belge qui, en vertu des dispositions conventionnelles internationales, sont soumises à l’impôt belge
+\end{itemize}
+
+Ex : établissement stable en Belgique  
+
+\subsection{Certains débiteurs de revenus}
+ 
+On vise les débiteurs de revenus mobiliers et les débiteurs de revenus professionnels ; système des précomptes. 
+Ces personnes, par application de l’article 57 CIR, sont tenues de tenir des fiches individuelles et de tenir 	des relevés récapitulatifs. Si on ne respecte pas cette obligation, la sanction est redoutable : les sociétés n’en tenant pas pour les revenus professionnels ou avantages de toute nature attribués sont taxées à du 300\%, non seulement pour les bénéfices dissimulés mais également pour les sociétés n’ayant pas repris sur les fiches et relevés des revenus professionnels spécifiquement ceux attribués sous forme d’avantages en nature. Avant le mois de juillet 2011, l’administration appliquait cette disposition avec une tolérance certaine et on évitait la taxation quand on réintégrait les revenus dans la base imposable ou quand l’employé acceptait d’être taxé à l’IPP pour les revenus non repris sur les fiches et relevés. Aujourd’hui, il n’y a plus de tolérance permise et, en cette fin d’année, il existe un énorme contentieux. Des accroissements au taux de 50\% sont également prévus. Il s’agit d’un revirement de la pratique administrative. 
+
+\subsection{Cas particuliers}
+
+Conjoints et cohabitants légaux : ils ne doivent rentrer qu’une seule déclaration (imposition commune) mais leurs revenus sont décumulés. Cette situation cesse pour l’année du divorce, du décès d’un des époux, en cas de séparation de fait à partir de la PI correspondant à l’année suivant l’année pendant laquelle la séparation a eu lieu. 
+
+La situation des époux en séparation de fait est une situation à très haut risque : par application des articles 393 et suivants (recouvrement), on peut recouvrer la dette d’impôt de l’un ou de l’autre sur le patrimoine propre de l’un ou de l’autre. Sans divorce dans un laps de temps raisonnable, et si l’un des époux subit de lourdes impositions à titre personnel, cela peut se répercuter sur l’autre conjoint SSI régime légal (si sous régime de séparation de biens => ces articles ne s’appliquent pas pour les « biens propres non suspects »)
+
+\section{Les délais de déclaration} 
+
+\subsection{Personnes physiques} 
+
+Article 308 §1er CIR. 
+
+Article 307bis CIR (déclaration électronique). S’agissant du délai de déclaration, l’article 308 n’est pas totalement transposable (pas de cachet apposé indiquant la date ultime de dépôt) mais sur tax-on-web, apparait la date ultime de rentrée de la déclaration. Par hypothèse, il n’y a pas d’envoi et donc la règle du délai d’ « au moins un mois à compter de son envoi» ne doit pas s’appliquer. 
+
+Avec l’instauration de la déclaration électronique, les choses ont changé : article 307bis (loi programme du 27 avril 2007). Cette loi prévoit que les personnes ayant recours à ce système peuvent faire savoir qu’ils ne veulent plus recevoir de formulaire de déclaration papier pour les exercices d’imposition suivants. 
+Plus récemment, voulant encourager ce système, l’article 308 s’est vu adjoindre un §3 prévoyant une dispense de formule de déclaration pour « ceux qui, pour l'exercice d'imposition antérieur, ont introduit une déclaration électronique visée à l'article 307bis par l'intermédiaire d'un mandataire et n'ont pas renoncé à ce mandat pour l'exercice en cours ».
+
+\subsection{Personnes morales (sociétés, associations,…)}
+
+Article 310 CIR. 
+
+Si elles clôturent par année civile, le délai ne peut être inférieur à un mois apd approbation des comptes ni supérieur à 6 mois après la date de clôture de l’exercice social. 
+
+Deux termes sont donc à prendre en compte : 
+\begin{itemize}
+\item le délai de déclaration ne peut pas excéder 6 mois apd fin de l’exercice social ... 
+\item l’approbation des comptes, ce n’est pas décisif parce que si l’approbation des comptes a lieu plus tard que 6 mois après la clôture de l’exercice, il n’y a pas de prolongement du délai et donc la règle qui compte c’est 6 mois après la clôture de l’exercice social. 
+\end{itemize}
+
+On peut demander, pour de justes motifs, une prolongation du délai de dépôt. Il faut toujours demander cette prolongation AVANT l’expiration du délai. 
+
+\subsection{Conditions de validité d’une déclaration}
+ 
+Il faut faire une précision : on ne parle pas de l’exactitude sur le fond mais la régularité de la déclaration quand à sa forme. 
+
+Plusieurs conditions sont prévues (article 307 CIR) : 
+\begin{itemize}
+\item Dépôt dans le délai légal ou prolongé 
+\item Faite sur la formule prévue à cet effet 
+\item Daté, signé, certifiée exacte 
+\item Accompagnée des documents requis  
+\item Accompagnée des annexes prescrites, notamment pour les sociétés les comptes annuels, le rapport de gestion, le PV de l’AG, certifiées exactes, datées et signées
+\end{itemize}
+
+Il résulte d’une certaine jurisprudence que quand le contribuable a commis une omission, l’administration a l’obligation de renvoyer la déclaration en demandant au contribuable de réparer l’irrégularité. 
+
+\subsection{Force probante de la déclaration}
+
+Une déclaration régulière est revêtue, vis-à-vis de l’administration, d’une présomption d’exactitude (article 339 CIR ; énonciation implicite). 
+
+Quelle est la portée exacte de cette présomption ? Cela ne s’attache qu’aux revenus déclarés à l’exclusion des éléments déductibles (charges et pertes professionnelles). Pour ce qui est des pertes et charges professionnelles, c’est au contribuable de démontrer la réalité de ces charges et de ces pertes ; article 49 CIR. Idem pour les pertes fiscales antérieures.
+
+L’article 339 CIR, instaurant cette présomption, dit que les revenus déclarés dans une déclaration régulière pourront, le cas échéant, être rectifiés, via les moyens de preuve énoncés.  (Erreur de fait ou de droit)
+
+La déclaration a également une force probante vis-à-vis du contribuable : elle est opposable au contribuable. Un contribuable ne peut-il jamais contester ? NON. La cour de cassation est intervenue, le 31 mai 1949, et a consacré le droit pour le contribuable de réclamer contre sa propre déclaration, en vertu du principe de légalité de l’impôt (« on doit payer tout l’impôt mais rien que l’impôt dont on est redevable »).
+
+Suivant cette même jurisprudence, on peut contester contre sa déclaration mais également contre un accord conclu avec l’administration, un accord écrit. L'accord a la même valeur que la déclaration.
+
+Que ce soit pour une déclaration ou un accord, on peut se plaindre d’une erreur de droit ou de fait. 
+Le contribuable peut éventuellement rectifier des erreurs au niveau des calculs. 
+
+Il peut évoquer l’illégalité d’un accord. 
+
+Ex : accord avec l’administration impliquant des impositions pour des exercices prescrits en vertu de la loi.
+Remarque : en matière de sociétés commerciales, la possibilité de revenir sur sa déclaration est soumise à des contraintes particulières, du moins si l’erreur invoquée implique une correction des comptes annuels. 
+
+\begin{itemize}
+\item Par exemple, une société aurait souhaité pouvoir bénéficier du taux réduit, distribue plus de 13\% de son capital en dividendes… Peut-elle convoquer une AG postérieure et revenir sur l’affectation du bénéfice ? Selon la jurisprudence, la réponse est non. Pour les sociétés commerciales, en réalité, la possibilité de rectifier des erreurs est limitée aux erreurs purement matérielles (calcul, inattention,…) du moins lorsque la contestation de la déclaration implique une modification des comptes annuels. 
+\item Si une société a omis de revendiquer, dans la formule de déclaration, l’application des intérêts notionnels, les comptes annuels ne doivent pas être modifiés et il s’agit là d’une erreur purement matérielle ...
+\end{itemize}
+
+Garabedian, Daniel ; Kirkpatrick, John  - La rectification du bilan de la société anonyme en droit privé et en droit fiscal -  Revue critique de jurisprudence belge, (page 317-347) - 1992
+
+\subsection{Les sanctions directes et indirectes}
+
+Une déclaration irrégulière équivaut à une absence totale de déclaration. 
+
+Cela va avoir des conséquences : 
+
+\subsubsection{L’administration pourra recourir à la taxation d’office.}
+
+Il existe deux procédures auxquelles l’administration peut recourir pour rectifier l’imposition d’un contribuable : 
+\begin{itemize}
+\item Rectification supposant le dépôt d’une déclaration régulière 
+\begin{itemize}
+\item Avec présomption d’exactitude 
+\end{itemize}
+
+\item Taxation d’office 
+\begin{itemize}
+\item Absence de déclaration ou déclaration irrégulière 
+\item Sans présomption d’exactitude 
+\item Taxation d’office présumée exacte tant que le contribuable ne prouve pas le contraire (=> inversion de la charge de la preuve au détriment du contribuable ; logique : manquement à une de ses obligations) Article 351 CIR92.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{délais d’imposition} 
+Période imposable = année 0 se rattachant à l’EI 01.
+Déclaration régulière en la forme : le fisc doit enrôler dans les 18 mois suivant le 1er janvier de l’exercice d’imposition càd pour le 30/06/02
+Déclaration irrégulière/ absence de déclaration : le fisc doit enrôler dans les 36 mois suivant le 1er janvier de l’exercice d’imposition càd pour le 1/01/04. 
+
+\subsubsection{accroissements}
+ 
+Selon l’échelle prévue par le CIR et l’ARE. 
+
+\subsection{La notion de comptabilité probante}	 
+C’est une notion spécifiquement fiscale càd qu’une comptabilité peut être probante fiscalement alors qu’elle ne l’est pas au sens du droit comptable. 
+Ex : contribuable assujetti à une comptabilité en partie double et qui présente une comptabilité simplifiée. Une telle comptabilité peut être considérée comme probante sur le plan fiscal dans la mesure où elles répondraient aux exigences habituelles (appui des écritures comptables sur des pièces justificatives). 
+A l’inverse, ce n’est pas parce que l’on se conforme à ses obligations comptables, que l’on dresse une comptabilité en partie double, qu’automatiquement la comptabilité doit être jugée probante fiscalement. 
+Ex : petite société exerçant sous la forme d’une SPRL exploitant une sandwicherie. L’examen de la compta fait apparaitre que pendant les 6 premiers mois de l’année, il n’y avait pas eu d’achat de baguettes… Ainsi en aucune façon, la comptabilité ne pouvait pas être considérée comme probante.
+
+Ensemble d'éléments cohérents et précis.
+
+\subsubsection{Conséquences du caractère non probant de la comptabilité au sens fiscal}
+
+\begin{itemize}
+\item Déduction des pertes antérieures : à défaut de comptabilité probante, l’administration pourra ramener les pertes antérieures à zéro selon une jurisprudence constante. 
+\item Quand nous examinerons les moyens de preuve, on examinera la taxation par comparaison (342 CIR) permettant de taxer par comparaison à condition de démontrer le caractère non probant de la comptabilité. 
+\item Lorsque l’administration recourt à la procédure de taxation d’office, le contribuable peut se défendre contre celle-ci en faisant la preuve du chiffre exact des revenus. Dans la sphère professionnelle, cela signifie « produire une comptabilité probante ». On pourrait ainsi combattre une telle taxation !
+\end{itemize}
+
+Attention, c’est une notion exclusivement fiscale. 
+
+\section{Les accords en matière fiscale}
+Il est fréquent, en matière fiscale, que le fisc conclue un accord écrit avec tel et tel contribuable. A la suite d’un contrôle, une proposition de rectification est envoyée, le contribuable marque son désaccord, moyennant des concession réciproques, in fine, on aura un accord écrit majorant les bases imposables du contribuable et qui se substitue à la déclaration et a la même force probante. \\
+
+Quelle est la nature juridique d’un tel accord ?
+
+Ce n’est pas un contrat de transaction. Le principe constitutionnel de légalité de l’impôt (170, 172 C°) s’oppose à ce que l’on puisse le considérer comme un contrat de transaction.\\
+
+C’est une notion dite sui generis càd dotée d’une nature propre. Il s’agit simplement de la rencontre de deux volontés concordantes pour établir un supplément de base imposable. On ne peut transiger sur le droit.\\ 
+
+Un contribuable peut réclamer contre un accord s’il démontre être victime d’une erreur de droit ou de fait ; le cas échéant, il peut se plaindre d’un vice de consentement.\\
+
+Ex : utilisation de procédés pour aboutir à l’accord viciant le consentement du contribuable.
+La jurisprudence donne rarement raison au contribuable ; pourtant l’administration utilise parfois des procédés douteux (ex : KBLux). \\
+
+Ex de l’erreur de droit : accord violant les délais d’imposition en matière fiscale.\\
+
+Ex de l’erreur de fait : simple erreur d’addition aboutissant à un montant supérieur. 
+Toujours, par application du principe de légalité de l’impôt, un accord ne peut porter que sur du fait et ne peut pas porter sur un point de droit. \\
+
+Ex d’accord portant sur le droit: revenu faisant l’objet de discussions concernant la qualification fiscale à donner à ce revenu. Des personnes physiques copropriétaires d’un terrain pourvu d’excavations ; contrat conclu avec SITA Wallonie ; paiement par SITA d’une redevance en contrepartie des déchets versés. Quid des redevances : revenus divers, revenus mobiliers, revenus professionnels, revenus immobiliers ? Si l’administration concluait un accord sur la qualification de la redevance avec un contribuable, cet accord ne lierait pas le contribuable.  \\
+
+L’administration fiscale a considéré, qu’à coté de ces accords écrits, il pouvait y avoir des accords implicites naissant de l’attitude même de l’administration. 
+
+Ex : contribuable indépendant qui, depuis 2000, détermine forfaitairement ses frais de représentation les fixant à 3\% du chiffre d’affaire. Ce contribuable fait l’objet d’un contrôle en 2005 et celui-ci n’aboutit à aucune rectification. En 2010, on a un nouveau contrôle et le taxateur conteste et estime que la méthode forfaitaire ne lui est pas opposable. Le taxateur pourra refuser ce mode de détermination forfaitaire mais cela ne pourra avoir d’effet que pour le futur (PI 2011 – EI 2012). 
+
+COMIR 50/2 : « Les accords individuels peuvent porter, soit sur un montant de frais, soit sur un pourcentage de frais (par ex. frais de représentation évalués à 3\% du revenu semi-brut) ou encore sur la quotité professionnelle lorsqu'il s'agit de frais mixtes (50\% du loyer ou 4/5 des frais de téléphone, par ex.) ». 
+
+COMIR 50/3 : « \textit{l'accord individuel ne doit pas nécessairement être conclu de manière explicite} ». « L'admission de frais professionnels par le fonctionnaire taxateur sans aucune vérification, ne donne pas naissance à un "accord individuel" (voir également Liège, 20.3.1991, Morimont, Bull. 721, p. 2836). Une cotisation au premier degré ne peut pas non plus impliquer l'existence d'un tel accord. Toutefois la vérification sommaire d'une déclaration peut donner naissance à un accord qui lie l'administration lorsque cette déclaration comprend des frais susvisés, qui sont admis sans modification ou qui sont rectifiés avec l'assentiment du contribuable ».
+Si en matière de charges professionnelles, des modes de calcul ont été adoptés par le contribuable et qu’il n’y a pas eu de désaccord de l’administration fiscale antérieurement, on ne pourra pas revenir sur le passé. 
+
+Article 361 CIR : Lorsque l'examen de la comptabilité d'une période imposable déterminée fait apparaître des sous-estimations d'éléments de l'actif ou des surestimations d'éléments du passif visées à l'article 24, alinéa 1er, 4°, celles-ci sont considérées comme des bénéfices de cette période imposable, même si elles résultent d'écritures comptables se rapportant à des périodes imposables antérieures, sauf si le contribuable établit qu'elles ont été prises en compte pour déterminer les résultats fiscaux de ces dernières périodes.
+C’est une disposition fiscale redoutable.
+
+Sous-estimation de l’actif. Ex : contribuable ayant acquis un immeuble en l’an 2000 et qui l’a amortit à concurrence de 5\% par an.
+\begin{itemize} 
+\item Il est contrôlé pour la période imposable 2010 et le taxateur n’est pas d’accord => l’immeuble devait être amorti à concurrence de 3\% par an. Selon le taxateur, il en résulte une sous-estimation de l’immeuble. La disposition prévoit que le taxateur pourra taxer le contribuable pour l’ensemble des sous-estimations d’actif et rattacher ces éléments, cette base imposable, à la période imposable de 2010, abstraction faite des délais d’imposition. 
+
+\item Si, en 2005, il y a eu contrôle et que l’on n’a pas eu de redressement du taux d’amortissement, quid ? On ne pourrait pas remettre en question, avec effet rétroactif, les accords conclus, même si ces accords ne sont pas conclus de manière explicite. 
+\end{itemize}
+
+
+Surestimation de passif. Ex : comptes fournisseurs beaucoup moins élevés que ce qui est déclaré dans la comptabilité. 
+Sous-estimation de l’actif. Ex : Depuis 1995, un contribuable a constitué un stock occulte => sous-estimation d’actif et l’administration, via l’article 361, pourra imposer l’entièreté du stock occulte en rattachant cet élément à la période imposable contrôlée de 2010 alors qu’il a été constitué durant les 15 années précédentes.
+C’est l’application du principe de croyance légitime qui veut que l’administration soit tenue par les croyances légitimes que son attitude a créées dans le chef d’un contribuable. Ce principe n’est qu’une catégorie particulière de principes se rattachant à la sécurité juridique. 
+Un accord a la même valeur qu’une déclaration (présomption d’exactitude). 
+L’administration admet la conclusion d’accords implicites déduits de l’attitude de l’administration, sans que cela soit accompagné d’un écrit, quand l’administration a fait naitre, dans le chef du contribuable, la croyance légitime, que les revenus déclarés sont admis par l’administration. 
+
+\section{Le principe de sécurité juridique}
+
+Arrêt SERKOV de la C.EDH : les effets de cet arrêt pourraient être dévastateurs en Belgique. 
+
+\subsection{Historique du principe de sécurité juridique}
+Ce principe a été reconnu pour la première fois dans un arrêt de la cour de cassation du 27 mars 1992. 
+Faits : un assujetti à la TVA avait un fournisseur habituel qui lui adressait des factures. L’assujetti déduisait ses factures nonobstant le fait qu’elles n’étaient pas tout à fait régulières au sens de l’AR n°1 (établissant les mentions devant figurer sur les factures). L’AR n°3 soumet l’exercice du droit à déduction à la production d’une facture régulière. Dans les faits, une mention faisait défaut. Divers contrôles sont effectués à l’encontre de la société. Le fournisseur tombe en faillite et laisse une ardoise considérable à la TVA et, pour récupérer de l’argent, on rejette la déduction sur les factures du fournisseur failli. Le contentieux introduit par le contribuable aboutit jusqu’à la cour de cassation. La cour de cassation fait droit à la revendication de l’assujetti dans les termes suivants (définition du principe) : « Les principes généraux de bonne administration comportent le droit à la sécurité juridique et s'imposent aussi à l'administration des finances; ce droit implique notamment que le citoyen doit pouvoir faire confiance aux services publics et compter que ceux-ci observent des règles et suivront une politique bien établies qu'il ne saurait concevoir autrement ». Ce qu’il y a de révolutionnaire c’est qu’avant les contribuables victimes d’une violation de la sécurité juridique demandaient des dommages et intérêts via une action en responsabilité contre l’Etat. Or, ici, on vise une sanction directe via l’anéantissement de l’impôt. C’est en cela que l’arrêt est dit « révolutionnaire ». 
+Cet arrêt a généré des articles et des publications en pagaille pour ne pas donner grand-chose parce que la cour est revenue sur son arrêt et a considéré que le principe de sécurité juridique ne pouvait pas s’appliquer à des situations contra legem. Dans l’arrêt de 1992, on se trouvait dans une situation contra legem. 
+Quel est le raisonnement ? 
+
+Rappel : hiérarchie des normes 
+\begin{itemize}
+\item Constitution 
+\item Lois – décrets
+\itel Arrêtés
+\end{itemize}
+ 
+La matière fiscale est régie par le principe de légalité de l’impôt qui prévoit qu’il n’y a pas de modération d’impôt sans loi et ce principe de légalité se trouve dans la C°. 
+Le principe de sécurité juridique n’a que la valeur d’un principe général de droit, règle non écrite d’une valeur équipollente à la loi. 
+
+On a donc un conflit entre une norme constitutionnelle et un principe général de droit. Il s’en déduit que ce conflit, au regard de la hiérarchie, doit se résoudre en faveur des dispositions constitutionnelles, des articles 170 et 172 C°. Cela donne en Belgique une portée restreinte au principe de sécurité juridique qui ne peut s’appliquer que pour des questions de fait. 
+
+-> Si l’administration suscite une croyance légitime contraire à la loi, le principe de sécurité juridique ne pourra rien pour le contribuable. \\
+
+Remarque : quand on a un conflit entre un principe général de droit et une loi, le conflit se résout à la faveur de la loi écrite. 
+La situation internationale est bien différente. On a un arrêt SERKOV rendu par la C.EDH le 7 juillet dernier. 
+L’arrêt Le Ski a consacré la primauté du droit international conventionnel sur le droit national et donc si conflit il y a, le conflit doit être tranché en faveur de la norme internationale. 
+La CEDH contient toute une série de dispositions, dont l’article 6 qui prévoit le principe du procès équitable dont dérive le principe du délai raisonnable. Remarque : le principe du délai raisonnable en matière fiscale ne peut être invoqué, dans la situation actuelle de la jurisprudence de la C.EDH,  en matière d’établissement de l’impôt mais bien au niveau du recouvrement de l’impôt. 
+L’article 1er du 1er protocole additionnel a donné lieu à une jurisprudence abondante (protection de la propriété). Il résulte de la jurisprudence de la C.EDH que cette disposition inclut le principe de sécurité juridique, tel que la cour de cassation l’avait défini en 1992. \\
+
+Ex : Jugement du Tribunal de Première Instance de Bruxelles dd. 21.12.2006 -     La circulaire du 5 janvier 1992 est manifestement contraire à l’article 156 du C.I.R. 1992, en ce qu’elle prévoit que la réduction d’impôt de moitié visée par cette disposition est admise pour 30\% des rémunérations sans qu’il soit requis que cette quotité ait été imposée à l’étranger. En raison du caractère d’ordre public de la loi fiscale, le fonctionnaire taxateur peut, en principe, rectifier les déclarations fiscales du contribuable en faisant application de l’article 156 du C.I.R. 1992. L’administration est tenue d’honorer les prévisions légitimes que son comportement a fait naître dans le chef du contribuable et qu’il ne pouvait interpréter autrement que comme une ligne de conduite bien établie. Le principe de la sécurité juridique résulte de l’article 6, § 1er, de la C.E.D.H. et de l’article 1er du premier protocole additionnel à cette convention. Le caractère d’ordre public du droit fiscal ne s’oppose dès lors pas à l’application du principe de la sécurité juridique, dans la mesure où ce principe résulte de la C.E.D.H., norme supérieure au droit interne. Pour l’avenir, à savoir à partir de la période imposable au cours de laquelle il a dénoncé l’application de la circulaire, le fonctionnaire taxateur peut, en raison du caractère d’ordre public de la loi fiscale, refuser l’application de cette circulaire illégale. \\
+    
+    
+Arrêt SERKOV (7 juillet 2011 ; n° rôle 39766/05) : 
+Faits : Ukraine. Un assujetti TVA revendiquait une exonération à l’importation de bien. On la lui refusait alors que cela avait été admis pour d’autres assujettis dans des conditions similaires (évolution de l’interprétation du terme). Quoi qu’il en soit, l’assujetti doit payer l’impôt réclamé. La C.EDH dit que l’article 1er du 1er protocole a été violé par l’Ukraine et ainsi, l’assujetti obtient la condamnation de l’Etat à l’indemniser à hauteur des impôts qu’il a été amené à payer (indemnité raisonnable). 
+La cour en profite pour exprimer sa vision des choses en matière de sécurité juridique : les législations nationales doivent avoir une certaine qualité. La loi doit être accessible, précise et prévisible dans son application. Concernant le pouvoir judiciaire, l’arrêt dit que le concept de prévisibilité implique que les cours nationales doivent interpréter la loi de manière uniforme et cohérente ; des interprétations judiciaires inconciliables ébranlent cette qualité et le doute doit profiter au contribuable (« in dubio contra fiscum »). 
+Le fait que l’article 1er du 1er protocole contienne ce principe de sécurité juridique ne fait aucun doute. Cela change radicalement les données du problème puisque l’on n’a plus un conflit entre la constitution belge et un principe général de droit mais d’un conflit entre une norme internationale et une norme nationale, devant être tranché en faveur du droit international. 
+-> Ainsi, le principe de sécurité juridique doit prévaloir sur le principe de légalité de l’impôt et doit s’appliquer également en cas d’accords contra legem. 
+La cour de cassation et la cour d’appel de Liège continuent de considérer, au jour d’aujourd’hui, que le principe de sécurité juridique ne doit pas s’appliquer… c’est un combat d’arrière garde parce que cela va créer un engorgement de recours devant la C.EDH. 
+Le législateur belge a adopté une loi rétroactive pour réparer les erreurs du passé et des contribuables belges ont introduit des recours devant la C.EDH pour violation du 1er protocole additionnel. Au vu de la motivation de l’arrêt SERKOV, la Belgique, d’après le prof, s’exposerait à une condamnation. 
+Ce que l’on vient de voir avait déjà été exprimé, dans un jugement du 23 mai 2007 rendu par le TPI de Bruxelles (publication : Revue Générale du Contentieux Fiscal 2007/4, P. 291 et suivantes).  
+
+\subsection{La charge de la preuve en matière fiscale}
+Le droit fiscal s’appuie sur le droit commun judiciaire et civil :
+\begin{itemize}
+\item Le demandeur doit faire la preuve du bienfondé de ses prétentions. 
+\item Si le défendeur émet des exceptions, la charge de la preuve de l’applicabilité de ces exceptions lui incombe. 
+\end{itemize} 
+
+Le véritable demandeur dans la procédure fiscale c’est l’administration avec la particularité que l’administration, au préalable, s’est décerné un titre à elle-même (privilège du préalable). Dans le cadre du procès fiscal, l’administration est pourtant défenderesse. Par application des principes généraux, 1315 CC, le fisc, nonobstant sa position formelle de défendeur, doit apporter la preuve du bien-fondé de ses prétentions, de l’existence et du montant des revenus imposables. 
+Par contre, si le contribuable revendique une exonération, une exemption ou une immunisation, ce sera à ce dernier à démontrer qu’il peut bénéficier de ces mesures. Le contribuable doit apporter la preuve des éléments déductibles que sont les frais professionnels et les pertes fiscales antérieures. 
+On a coutume de dire qu’il y a une inversion du contentieux : le véritable défendeur (le contribuable) est formellement le demandeur (car il introduit le recours dirigé contre le titre exécutoire) et le véritable demandeur (le fisc) est formellement le défendeur. 
+S’il y a bien un problème extrêmement controversé aujourd’hui, c’est celui de la charge de la preuve dans un contexte international : un contribuable belge est en principe imposable sur les revenus d’origine étrangère et ce sera au contribuable à démontrer qu’il n’est pas imposable en vertu d’une CPDI. 
+
+Le raisonnement de l’administration fiscale est : 
+\begin{itemize}
+\item Imposition sur tous les revenus, peu importe l’origine d’un habitant du royaume 
+\item Si volonté de bénéficier d’une exemption, à lui de prouver qu’il peut en bénéficier 
+
+\begin{itemize}
+\item Exemple : convention belgo-luxembourgeoise – article 15 
+\begin{itemize}
+\item Démonstration de l’exercice de l’activité à l’étranger 
+\item Comment ? C’est pratiquement impossible à rapporter 
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+C’est un problème controversé. 
+Dans les notes, on trouvera un arrêt de la cour d’appel d’Anvers qui dit que le fisc doit rapporter la preuve de ce que le revenu d’origine étrangère est taxable en Belgique. Par contre, dans un arrêt récent de la cour d’appel de Liège, on dit l’inverse. Le problème doit être réglé par la cour de cassation.  
+
+Article 870 C.J. - Chaque partie a la charge de la preuve des faits qu'elle allègue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{InCours du 22.01.2013}
+\pagenumbering{arabic} \setcounter{page}{1} 
+
+\section{Références}
+Le droit pénal des affaires, Spreutel, Roggen & Roger Frank, DPA, Bruylant, 2005
+
+Guide juridique de l'entreprise.
+
+Revue : Droit pénal de l'entreprise. Larcier. Trimestriel
+\section{Introduction}
+
+Les acteurs de la vie des affaires\\
+La morale générale ou le civisme général\\
+La déontologie concernant les professions organisées.\\
+Les règles pénales. C'est un tribunal répressif qui va juger sur base d'un texte de loi.\\
+
+Il y a aussi les règles de bonnes pratiques. Code des bons usages.		\\
+
+Le DPE s'applique aux personnes physiques et aux personnes morales. Il s'intéresse à la vie de l'entreprise (faux en écriture, ...) mais aussi à sa création (législation sur la BCE, accès à la profession) et sa mort (ne pas avoir fait aveu de faillite, détournement d'actif), PRJ.\\
+
+L'infraction la plus courante est le faux en écriture, infraction de blanchiment, escroquerie, bénéfice au détriment de l'environnement. On est dans une criminalité de profit. La criminalité de profit appelle une réponse adéquate -> Confiscation et amendes financières. Il faut donc un arsenal juridique pour aller chercher l'argent où il est.\\
+
+Il existe aussi le droit pénal des entreprises publiques (intercom, entreprises publiques autonomes, ...). Dont le délit d'ingérance (C.Pénal - article 245). Prise d'intérêt.\\
+
+Pas mal d'infractions hors du C.Penal, loi en matière commerciale, sociale, fiscale qui comportent aussi des infraction (contre-façon en matière de droit d'auteur). Contrefaçon, droit pénal boursier, délit d'initié, loi Prospectus, distribution de dividendes fictifs. Faux dans les rapports de gestion, A.G., Droit pénal des transport, temps de conduite, règlement EU des transports. Droit pénal fiscal, fraude fiscal. Droit pénal de l'environnement, Naufrage de l'Erika. Lois sur les pratiques du commerce.(solde,...) Santé du consommateur (Amiante, prothèse mammaire, sang contaminé, ...) Loi sur le crédit à la consommation. Loi Breyne. Droit pénal social (règlement sur la protection du travail)\\
+
+
+Le droit pénal a un rôle répressif, sanctionner ceux qui ne respectent pas les règles mais vient en dernier recours. Comportant les plus scandaleux, les moins tolérables. Rôle de protection des victimes (Auditorat du Travail). ex: négriers de la construction, carrousel TVA, escroqueries du type Madoff, corruption. Il y a aussi un rôle préventif, rappeler la norme. Ce qui fait peur c'est la sévérité de la peine et la certitude d'être pris.\\
+
+Outils particuliers : police spécialisée, parquet spécialisée. juge d'instruction spécialisée disposant de pouvoirs particuliers. Article 29 du C.I.C. obligent les fonctionnaires à dénoncer. Effectivité de la peine - emprisonnement, confiscation et peine d'amende. Associé aux saisies, préventives, ....\\
+
+Autres mécanisme pour parvenir aux buts : autres mécanismes de sanctions (sanctions civiles, sanctions administratives, action en cessation), régime préventif en matière de blanchiment, transaction pénale, auto-régulation encadrée.\\
+
+\section{Suite droit pénal}
+
+Tout part d'un fait infractionnel. \\
+
+On va devoir le découvrir via :
+
+\begin{itemize}
+\item une dénonciation (anonyme ou non) qui est la porte ouverte pour entamer une enquête.
+\item une plainte d'une victime qui a subi un dommage.
+\item le travail policier. (regarder les sociétés qui n'ont pas déposé de comptes annuels depuis plus de 3 ans.)
+\end{itemize}
+
+Le dossier va être transmis au Parquet qui est un service pour rassembler les preuves et entamer l'action publique. Le ministère public va faire un travail d'information, recherche des auteurs par le substitut du procureur du Roi pour amener le dossier au Tribunal via une citation directe (Tribunal de Police, Tribunal correctionnel, Cour d'Assises). Le substitut va diriger l'enquête, adresser des documents aux services de police. (Police fédérale, PJ, zone de police, ...). Ils font des devoirs d'auditions, entendre des personnes (les victimes, les témoins, de fonctionnaires, de suspects). Il peut aussi faires des perquisitions avec accord de la personne, des saisies, visiter des bâtiments public, prendre des échantillons, désigner un expert afin de  retrouver les auteurs. Il va citer des prévenus à comparaître devant le Tribunal. 2/3 des fois, c'est classé sans suite souvent car auteur inconnu, faits prescrits, les choses sont rentrées dans l'ordre, il y a eu indemnisation. Entre les 2, il peut y avoir une médiation pénale ou une transaction pénale (versement d'une somme d'argent pour éteindre les poursuites).\\
+
+Dans d'autres cas, le juge d'instruction va instruire le dossier et mettre le dossier à l'instruction (moins de 10\% des dossiers). Il va recherches les auteurs et les preuves des faits qui lui sont dénoncés. Il va s'appuyer sur les policiers fédéraux et des zones de police. Il a plus de pouvoirs que le substitut dont des perquisitions sans/contre le consentement des personnes, écoute téléphonique, prélèvement ADN même forcée mais aussi la détention préventive/mandat d'arrêt. Si la détention dure plus de 5 jours, c'est la chambre du Conseil qui va confirmer la détention. A la fin de l'instruction à charge et à décharge, il envoie le dossier au procureur du roi. C'est là qu'on agit via un réquisitoire (une demande) à destination de la Chambre du Conseil(Chambre des mises en Accusation pour le degré d'Appel). Il va libeller les infraction reprochées. La chambre du conseil va pouvoir renvoyer devant le tribunal correctionnel  (ordonnance de renvoi ou ordonnance de non-lieu). Instruction/ Information est secrète (sauf exception). Le travail d'enquete est écrit (P.V., ...) et de manière inquisitoire. Au niveau de l'audience au tribunal, elle est publique et orale. Le suspect est présumé innocent jusqu'à ce qu'il n'ai plus d'appel/recours possible.\\
+
+Pour toute faillite, le curateur va faire un rapport financier.\\
+
+\section{Droit pénal général}
+
+Société, ASBL, ...\\
+
+Article 5. C. Penal : Infraction pour le compte de l'entreprise (dans son profit). La peine des entreprise est une amende pénale mais peut bénéficier d'un sursis (parfois partiel) ou d'une suspension du prononcé. Parfois, on peut aller jusqu'à la dissolution.
+
+Par le personnel : Abus de biens sociaux, corruption privée (bakchich au directeur des achats de la part du fournisseur).
+
+Infraction intentionnelle (PP et PM) ou non-intentionnelle (faute quand meme. PP ou PM mais pas les deux. L'un sera excusé. L'excusé sera celui dont la faute est la plus légère). C'est plus souvent la personne morale qui est condamnée.
+
+Article 66-69 C. Penal La participation criminelle. Encodage (auteur/infraction matérielle). Il devient donc co-auteur. Il existe aussi les complices. Responsabilité réduite mais risque réel. 
+
+\section{Droit pénal spécial}
+
+Faux en écriture. Article 193-197 C. Pénal
+
+Il faut un mensonge dans un écrit protégé (importance / effet juridique) et qui a été fait dans une intention frauduleuse.
+
+Usage de faux. Ex : remboursement d'un emprunt fait sur base d'un faux.
+
+Abus de confiance. Article 491 C.Penal. Appropriation d'un bien que le prévenu avait en possession.(Agent de change/banquier qui investit contrairement au souhait du client).
+
+Escroquerie - Article 496 C.Penal.
+
+Remise de biens/choses, une mise en scène / manœuvre frauduleuse (endormir la victime) avec une intention frauduleuse.
+
+
+
+
+
+
+
+
+
+
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications2}       % 'publications' is the name of a BibTeX file
+\addcontentsline{toc}{chapter}{Bibliographie} 
+\end{document}
